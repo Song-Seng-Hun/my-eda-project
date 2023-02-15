@@ -107,3 +107,4 @@
 - 데이터
   - [EDA 프로젝트 4조.pptx](https://docs.google.com/presentation/d/1Jpa3Q-Jw3U8QfQBKJXx9b5tj16xVT1cg/edit?usp=sharing&ouid=104392179046615871789&rtpof=true&sd=true) : 프로젝트 발표 pptx
   - [boardgame_df.csv](https://docs.google.com/spreadsheets/d/1of4LKgRJSekfG7D7MoW_KL99-QCkCMQ1V7dfKt4_dZI/edit?usp=sharing) : BoardGameGeek으로 부터 추출한 데이터 csv
+  - [booardlife_top100_df](https://docs.google.com/spreadsheets/d/1W933Z1F2266UpCbIoNf2Y9CQXkU7nGX28ZwvIETtjxk/edit?usp=sharing) : Boardlife에서 추출한 상위 100개 보드게임 데이터 csv
