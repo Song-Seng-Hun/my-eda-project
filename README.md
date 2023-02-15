@@ -1,24 +1,23 @@
 # 🎲 보드게임 트렌드 분석 EDA 프로젝트 🎲
-## 팀원
-  - [성용호](https://github.com/yongho0166) : 웹 크롤링, 데이터 수집 담당 (사용툴 : Selenium, BeautifulSoup, pandas)
-  - [송승훈](https://github.com/Song-Seng-Hun) : 데이터 프레임 전처리, 가공 담당 (사용툴 : pandas, numpy, matplotlib)
-  - [신재성](https://github.com/JaeseongShin) : 시각화, 디자인 담당 (사용툴 : pandas, matplotlib)
 ## 프로젝트 설명
   - 세계 최대 규모 보드게임 커뮤니티 BoardGameGeek으로부터 데이터를 추출하여 EDA를 통한 향후 트렌드를 분석하는 프로젝트
-## 주제 선정 배경
 
-## 개요
-- 크롤링
-  - 팀프로젝트_데이터추출_성용호.ipynb (성용호) : BoardGameGeek 사이트에서 크롤링을 통한 데이터 추출하는 코드
-  - danawa-checkpoint.ipynb (신재성) : 다나와 사이트에서 아동용 장난감 가격 데이터를 추출하는 코드
-  - danawa_golf-checkpoint.ipynb (신재성) : 다나와 사이트에서 골프용품 가격 데이터를 추출하는 코드
-  - 한국커뮤니티비교.ipynb (성용호) : 보드라이프로부터 크롤링을 통해 데이터를 추출해서 BoardGameGeek의 데이터와 비교하는 코드
-- 데이터 프레임 가공
-  - boardgame_df.ipynb (송승훈) :  BoardGameGeek 사이트로부터 추출한 데이터 파일을 가공해서 여러가지 형태로 분석시킨 코드
-- 시각화 및 데이터 분석
-- 데이터
-  - [EDA 프로젝트 4조.pptx](https://docs.google.com/presentation/d/1Jpa3Q-Jw3U8QfQBKJXx9b5tj16xVT1cg/edit?usp=sharing&ouid=104392179046615871789&rtpof=true&sd=true) : 프로젝트 발표 pptx
-  - [boardgame_df.csv](https://docs.google.com/spreadsheets/d/1of4LKgRJSekfG7D7MoW_KL99-QCkCMQ1V7dfKt4_dZI/edit?usp=sharing) : BoardGameGeek으로 부터 추출한 데이터 csv
+## 목표
+![image](https://user-images.githubusercontent.com/69943723/218906164-746f8bbb-169d-497a-a320-1e83f9fd1697.png)
+</br>탐색적 데이터 분석을 통해 다양한 관점에서 보드게임의 현재까지의 트렌드를 분석하여 향후 보드게임 산업의 방향을 예측, 제안해보자 한다.
+
+## 결론
+![image](https://user-images.githubusercontent.com/69943723/218908375-8ff06a7d-17d9-4633-b3f4-03c23e8a7a10.png)
+![image](https://user-images.githubusercontent.com/69943723/218908392-a6804c99-8ab5-4dc6-bd77-a37c3855cc5c.png)
+![image](https://user-images.githubusercontent.com/69943723/218908430-f37d0c34-be45-4ada-91d8-2b9070a9ff19.png)
+배경 시대, ip 매체, 구성물, 권장연령, 권장인원, 최대플레이시간, 가격 등 여러가지 측면에서 데이터들을 분석해본 결과 유의미해보이는 경향성을 얻어낼 수 있었다.
+
+## 주제 선정 배경
+  1. 보드게임이라는 분야가 사람들에게 생소한 분야이기에 신선한 시도를 하기에 좋은 주제라고 판단.
+  2. 국내외 보드게임 커뮤니티 사이트에 데이터가 매우 잘 정리되어 있어 분석을 위한 데이터를 모으기 용이했다.
+  3. 방대한 양의 데이터를 다뤄보는 경험을 체험해보기 위한 목적
+  4. 특정 산업 분야의 트렌드를 분석하는 주제이기에 실무적으로도 의의가 있을 것으로 판단.
+
 ## 크롤링
 ![image](https://user-images.githubusercontent.com/69943723/218630454-c1df86fb-af02-4703-9e4c-1525b915fa16.png)
 ![image](https://user-images.githubusercontent.com/69943723/218630391-dd95b69f-80a7-4693-8ad2-e7ef474d7586.png)
@@ -30,7 +29,7 @@
 ![image](https://user-images.githubusercontent.com/69943723/218630787-445c1a1b-6a8b-4c98-b8c3-62886582f3a8.png)
 
 ## 데이터 프레임 가공
-![Screenshot from 2023-02-14 11-02-33](https://user-images.githubusercontent.com/69943723/218619754-172d5527-52eb-43c3-b17f-f9b1a9f1c7b0.png)
+![image](https://user-images.githubusercontent.com/69943723/218619754-172d5527-52eb-43c3-b17f-f9b1a9f1c7b0.png)
 ![image](https://user-images.githubusercontent.com/69943723/218629585-a0209995-07d3-4303-b9b5-672dfc7d32fa.png)
 
 ## 시각화 및 데이터 분석
@@ -88,5 +87,22 @@
 ![image](https://user-images.githubusercontent.com/69943723/218629980-5a08a440-dc49-4838-9715-f4c6fc3a25c6.png)
 ![image](https://user-images.githubusercontent.com/69943723/218629989-d780029e-f034-44fc-b05a-0e02f51947be.png)
 ![image](https://user-images.githubusercontent.com/69943723/218629997-b4aed981-81b6-49ea-aa56-29822796a990.png)
-## 결론
+
 ## 아쉬운 점..
+## 팀원
+  - [성용호](https://github.com/yongho0166) : 웹 크롤링, 데이터 수집 담당 (사용툴 : Selenium, BeautifulSoup, pandas)
+  - [송승훈](https://github.com/Song-Seng-Hun) : 데이터 프레임 전처리, 가공 담당 (사용툴 : pandas, numpy, matplotlib)
+  - [신재성](https://github.com/JaeseongShin) : 시각화, 디자인 담당 (사용툴 : pandas, matplotlib)
+## 첨부 데이터
+- 크롤링
+  - data_crawl.ipynb (성용호) : BoardGameGeek 사이트에서 크롤링을 통한 데이터 추출하는 코드
+  - danawa.ipynb (신재성) : 다나와 사이트에서 아동용 장난감 가격 데이터를 추출하는 코드
+  - danawa_golf.ipynb (신재성) : 다나와 사이트에서 골프용품 가격 데이터를 추출하는 코드
+  - boardlife_df.ipynb (성용호) : 보드라이프로부터 크롤링을 통해 데이터를 추출해서 BoardGameGeek의 데이터와 비교하는 코드
+- 데이터 프레임 가공
+  - boardgamegeek_df.ipynb (송승훈) :  BoardGameGeek 사이트로부터 추출한 데이터 파일을 가공해서 여러가지 형태로 분석시킨 코드
+- 시각화 및 데이터 분석
+  - design_graph.ipynb(신재성) : 산출된 그래프를 더 효과적인 시각화가 되도록 디자인 개선시킨 코드
+- 데이터
+  - [EDA 프로젝트 4조.pptx](https://docs.google.com/presentation/d/1Jpa3Q-Jw3U8QfQBKJXx9b5tj16xVT1cg/edit?usp=sharing&ouid=104392179046615871789&rtpof=true&sd=true) : 프로젝트 발표 pptx
+  - [boardgame_df.csv](https://docs.google.com/spreadsheets/d/1of4LKgRJSekfG7D7MoW_KL99-QCkCMQ1V7dfKt4_dZI/edit?usp=sharing) : BoardGameGeek으로 부터 추출한 데이터 csv
