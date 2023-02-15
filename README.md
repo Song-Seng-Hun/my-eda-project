@@ -1,21 +1,22 @@
 # 🎲 보드게임 트렌드 분석 EDA 프로젝트 🎲
-## 팀원
-  - [성용호](https://github.com/yongho0166) : 웹 크롤링, 데이터 수집 담당 (사용툴 : Selenium, BeautifulSoup, pandas)
-  - [송승훈](https://github.com/Song-Seng-Hun) : 데이터 프레임 전처리, 가공 담당 (사용툴 : pandas, numpy, matplotlib)
-  - [신재성](https://github.com/JaeseongShin) : 시각화, 디자인 담당 (사용툴 : pandas, matplotlib)
+## 목표
+![image](https://user-images.githubusercontent.com/69943723/218906164-746f8bbb-169d-497a-a320-1e83f9fd1697.png)
+다양한 관점에서 보드게임의 현재까지의 트렌드를 분석하여 향후 보드게임 산업의 방향을 예측, 제안해보자 한다.
 ## 프로젝트 설명
   - 세계 최대 규모 보드게임 커뮤니티 BoardGameGeek으로부터 데이터를 추출하여 EDA를 통한 향후 트렌드를 분석하는 프로젝트
 ## 주제 선정 배경
 
+
 ## 개요
 - 크롤링
-  - 팀프로젝트_데이터추출_성용호.ipynb (성용호) : BoardGameGeek 사이트에서 크롤링을 통한 데이터 추출하는 코드
-  - danawa-checkpoint.ipynb (신재성) : 다나와 사이트에서 아동용 장난감 가격 데이터를 추출하는 코드
-  - danawa_golf-checkpoint.ipynb (신재성) : 다나와 사이트에서 골프용품 가격 데이터를 추출하는 코드
-  - 한국커뮤니티비교.ipynb (성용호) : 보드라이프로부터 크롤링을 통해 데이터를 추출해서 BoardGameGeek의 데이터와 비교하는 코드
+  - data_crawl.ipynb (성용호) : BoardGameGeek 사이트에서 크롤링을 통한 데이터 추출하는 코드
+  - danawa.ipynb (신재성) : 다나와 사이트에서 아동용 장난감 가격 데이터를 추출하는 코드
+  - danawa_golf.ipynb (신재성) : 다나와 사이트에서 골프용품 가격 데이터를 추출하는 코드
+  - boardlife_df.ipynb (성용호) : 보드라이프로부터 크롤링을 통해 데이터를 추출해서 BoardGameGeek의 데이터와 비교하는 코드
 - 데이터 프레임 가공
-  - boardgame_df.ipynb (송승훈) :  BoardGameGeek 사이트로부터 추출한 데이터 파일을 가공해서 여러가지 형태로 분석시킨 코드
+  - boardgamegeek_df.ipynb (송승훈) :  BoardGameGeek 사이트로부터 추출한 데이터 파일을 가공해서 여러가지 형태로 분석시킨 코드
 - 시각화 및 데이터 분석
+  - design_graph.ipynb(신재성) : 산출된 그래프를 더 효과적인 시각화가 되도록 디자인 개선시킨 코드
 - 데이터
   - [EDA 프로젝트 4조.pptx](https://docs.google.com/presentation/d/1Jpa3Q-Jw3U8QfQBKJXx9b5tj16xVT1cg/edit?usp=sharing&ouid=104392179046615871789&rtpof=true&sd=true) : 프로젝트 발표 pptx
   - [boardgame_df.csv](https://docs.google.com/spreadsheets/d/1of4LKgRJSekfG7D7MoW_KL99-QCkCMQ1V7dfKt4_dZI/edit?usp=sharing) : BoardGameGeek으로 부터 추출한 데이터 csv
@@ -30,7 +31,7 @@
 ![image](https://user-images.githubusercontent.com/69943723/218630787-445c1a1b-6a8b-4c98-b8c3-62886582f3a8.png)
 
 ## 데이터 프레임 가공
-![Screenshot from 2023-02-14 11-02-33](https://user-images.githubusercontent.com/69943723/218619754-172d5527-52eb-43c3-b17f-f9b1a9f1c7b0.png)
+![image](https://user-images.githubusercontent.com/69943723/218619754-172d5527-52eb-43c3-b17f-f9b1a9f1c7b0.png)
 ![image](https://user-images.githubusercontent.com/69943723/218629585-a0209995-07d3-4303-b9b5-672dfc7d32fa.png)
 
 ## 시각화 및 데이터 분석
@@ -90,3 +91,7 @@
 ![image](https://user-images.githubusercontent.com/69943723/218629997-b4aed981-81b6-49ea-aa56-29822796a990.png)
 ## 결론
 ## 아쉬운 점..
+## 팀원
+  - [성용호](https://github.com/yongho0166) : 웹 크롤링, 데이터 수집 담당 (사용툴 : Selenium, BeautifulSoup, pandas)
+  - [송승훈](https://github.com/Song-Seng-Hun) : 데이터 프레임 전처리, 가공 담당 (사용툴 : pandas, numpy, matplotlib)
+  - [신재성](https://github.com/JaeseongShin) : 시각화, 디자인 담당 (사용툴 : pandas, matplotlib)
