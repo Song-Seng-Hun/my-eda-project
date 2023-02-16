@@ -21,6 +21,12 @@
 ## 크롤링
 ![image](https://user-images.githubusercontent.com/69943723/218630454-c1df86fb-af02-4703-9e4c-1525b915fa16.png)
 ![image](https://user-images.githubusercontent.com/69943723/218630391-dd95b69f-80a7-4693-8ad2-e7ef474d7586.png)
+
+</br>
+**[출처 사이트 구조]**
+표 형식으로 구성된 목록에 랭킹, 이름, 발매년도, 점수, 가격 등의 점수가 정리되어 있다.</br>해당 항목 클릭 시 상세 
+</br>
+
 ![image](https://user-images.githubusercontent.com/69943723/218630720-f15006d5-e798-491a-a9cc-941e6219dd6b.png)
 ![image](https://user-images.githubusercontent.com/69943723/218630734-6544e07b-12b0-417f-86ed-febea9805c44.png)
 ![image](https://user-images.githubusercontent.com/69943723/218630747-bb91bd93-2b2b-4384-9a5a-146d1183c09d.png)
