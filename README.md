@@ -22,16 +22,25 @@
 ![image](https://user-images.githubusercontent.com/69943723/218630454-c1df86fb-af02-4703-9e4c-1525b915fa16.png)  
 ![image](https://user-images.githubusercontent.com/69943723/218630391-dd95b69f-80a7-4693-8ad2-e7ef474d7586.png)  
 
-__[출처 사이트 구조]__   
+**[출처 사이트 구조]**   
 표 형식으로 구성된 목록에 랭킹, 이름, 발매년도, 점수, 가격 등의 점수가 정리되어 있다.</br>해당 항목 클릭 시 상세페이지로 연결되어 권장연령, 난이도, 예상플레이시간, 카테고리, 매커니즘 등 추가적인 정보를 수집할 수 있다.  
+
 ![image](https://user-images.githubusercontent.com/69943723/218630720-f15006d5-e798-491a-a9cc-941e6219dd6b.png)  
-**난점1.**  
+**난점1.** : 다루는 데이터의 양이 방대해 코드가 무거워지고 프로그램이 처리하는데 시간이 오래 걸렸다.  
+총 38만개의 데이터 중 유저 평가가 존재하는 상위 23900개의 데이터만을 수집하고 취급했다.  
 ![image](https://user-images.githubusercontent.com/69943723/218630734-6544e07b-12b0-417f-86ed-febea9805c44.png)  
+**난점2** : 사이트에서 데이터 목록의 특정구간(20번 이상의 항목)을 조회하기 위해서는 로그인 되어있을 것을 요구했다.  
+Selenium으로 로그인 한 뒤, 쿠키 정보를 저장해. 해당 쿠키 정보를 가지고 있는 세션을 통해 BeautifulSoup으로 크롤링하는 것이 가능했다.  
 ![image](https://user-images.githubusercontent.com/69943723/218630747-bb91bd93-2b2b-4384-9a5a-146d1183c09d.png)  
 ![image](https://user-images.githubusercontent.com/69943723/218630756-b48fb2d4-4a8e-464e-a05f-4379fc305918.png)  
+**난점3** : 수집한 soup 상에서 원하는 정보를 조회해봤더니 해당 정보가 존재하지 않는다는 결과가 나왔다.  
+이는 해당 사이트가 javaScript를 통해 화면 구성이 이루어지는 동적 페이지였기에 발생하는 문제였으며, javaScript 상에 존재하는 문자를 정규식을 통해 정리해 원하는 데이터들을 수집하는 것이 가능했다.  
 ![image](https://user-images.githubusercontent.com/69943723/218630769-36fcac7a-3709-458c-bb02-530071451832.png)  
+**난점4** : 국내 사이트에서 대량의 데이터를 수집하려 시도했더니, 해당 사이트에서 접속을 차단하여 수집이 불가능했다.  
+따라서 국내 사이트를 출처로 하는 데이터는 상위 100개의 데이터만 수집하고 다루기로 했다.  
 ![image](https://user-images.githubusercontent.com/69943723/218630787-445c1a1b-6a8b-4c98-b8c3-62886582f3a8.png)  
-
+**난점5** : 다루고자 하는 데이터의 카테고리, 매커니즘의 종류수가 굉장히 많았으며, 하나의 항목에 대응되는 카테고리, 매커니즘의 수가 1개가 아니었다.(1:1대응이 아니다.)  
+여러개의 카테고리, 매커니즘을 나타내는 String들을 List 형태처럼 구성해서 하나의 행에 넣어, 사용할 때에는 별개의   
 ## 데이터 프레임 가공
 ![image](https://user-images.githubusercontent.com/69943723/218619754-172d5527-52eb-43c3-b17f-f9b1a9f1c7b0.png)  
 ![image](https://user-images.githubusercontent.com/69943723/218629585-a0209995-07d3-4303-b9b5-672dfc7d32fa.png)  
