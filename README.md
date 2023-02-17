@@ -3,13 +3,13 @@
   - 세계 최대 규모 보드게임 커뮤니티 사이트 BoardGameGeek으로부터 데이터를 추출하여 **EDA를 통한 향후 트렌드**를 분석하는 프로젝트
 
 ## 목표
-![image](https://user-images.githubusercontent.com/69943723/218906164-746f8bbb-169d-497a-a320-1e83f9fd1697.png)
-</br>탐색적 데이터 분석을 통해 다양한 관점에서 보드게임의 현재까지의 트렌드를 분석하여 **향후 보드게임 산업의 방향을 예측, 제안**해보자 한다.
+![image](https://user-images.githubusercontent.com/69943723/218906164-746f8bbb-169d-497a-a320-1e83f9fd1697.png)  
+탐색적 데이터 분석을 통해 다양한 관점에서 보드게임의 현재까지의 트렌드를 분석하여 **향후 보드게임 산업의 방향을 예측, 제안**해보자 한다.
 
 ## 결론
-![image](https://user-images.githubusercontent.com/69943723/218908375-8ff06a7d-17d9-4633-b3f4-03c23e8a7a10.png)
-![image](https://user-images.githubusercontent.com/69943723/218908392-a6804c99-8ab5-4dc6-bd77-a37c3855cc5c.png)
-![image](https://user-images.githubusercontent.com/69943723/218908430-f37d0c34-be45-4ada-91d8-2b9070a9ff19.png)
+![image](https://user-images.githubusercontent.com/69943723/218908375-8ff06a7d-17d9-4633-b3f4-03c23e8a7a10.png)  
+![image](https://user-images.githubusercontent.com/69943723/218908392-a6804c99-8ab5-4dc6-bd77-a37c3855cc5c.png)  
+![image](https://user-images.githubusercontent.com/69943723/218908430-f37d0c34-be45-4ada-91d8-2b9070a9ff19.png)  
 배경 시대, ip 매체, 구성물, 권장연령, 권장인원, 최대플레이시간, 가격 등 **여러가지 측면에서 데이터들을 분석**해본 결과 **유의미해보이는 경향성**을 얻어낼 수 있었다.
 
 ## 주제 선정 배경
@@ -19,35 +19,55 @@
   4. 특정 산업 분야의 트렌드를 분석하는 주제이기에 실무적으로도 의의가 있을 것으로 판단.
 
 ## 크롤링
+**출처 사이트**
+- [보드게임긱](https://boardgamegeek.com/) : 세계 최대의 보드게임 커뮤니티 사이트, 해외 보드게임 트렌드 분석을 위한 자료를 수집하는데 사용하였다.  
+- [보드라이프](https://boardlife.co.kr/) : 국내 최대의 보드게임 커뮤니티 사이트, 국내 보드게임 트렌드 분석을 위한 자료를 수집하는데 사용하였다.  
+- [다나와](https://www.danawa.com/) : 가격비교 사이트, 다른 항목 상품들과의 비교를 위해 사용하였다.  
+해당 보드게임 사이트들은 마니악한 보드게임을 고평가하고 캐주얼한 파티게임을 저평가하는 경향성이 있기에 약간의 편향성이 존재할 수 있다는 한계가 있을 수 있다.  
 ![image](https://user-images.githubusercontent.com/69943723/218630454-c1df86fb-af02-4703-9e4c-1525b915fa16.png)  
 ![image](https://user-images.githubusercontent.com/69943723/218630391-dd95b69f-80a7-4693-8ad2-e7ef474d7586.png)  
 
 **[출처 사이트 구조]**   
-표 형식으로 구성된 목록에 랭킹, 이름, 발매년도, 점수, 가격 등의 점수가 정리되어 있다.</br>해당 항목 클릭 시 상세페이지로 연결되어 권장연령, 난이도, 예상플레이시간, 카테고리, 매커니즘 등 추가적인 정보를 수집할 수 있다.  
+표 형식으로 구성된 목록에 랭킹, 이름, 발매년도, 점수, 가격 등의 점수가 정리되어 있다.  
+해당 항목 클릭 시 상세페이지로 연결되어 권장연령, 난이도, 예상플레이시간, 카테고리, 매커니즘 등 추가적인 정보를 수집할 수 있다.  
 
 ![image](https://user-images.githubusercontent.com/69943723/218630720-f15006d5-e798-491a-a9cc-941e6219dd6b.png)  
 **난점1.** : 다루는 데이터의 양이 방대해 코드가 무거워지고 프로그램이 처리하는데 시간이 오래 걸렸다.  
 총 38만개의 데이터 중 유저 평가가 존재하는 상위 23900개의 데이터만을 수집하고 취급했다.  
+
 ![image](https://user-images.githubusercontent.com/69943723/218630734-6544e07b-12b0-417f-86ed-febea9805c44.png)  
 **난점2** : 사이트에서 데이터 목록의 특정구간(20번 이상의 항목)을 조회하기 위해서는 로그인 되어있을 것을 요구했다.  
 Selenium으로 로그인 한 뒤, 쿠키 정보를 저장해. 해당 쿠키 정보를 가지고 있는 세션을 통해 BeautifulSoup으로 크롤링하는 것이 가능했다.  
+
 ![image](https://user-images.githubusercontent.com/69943723/218630747-bb91bd93-2b2b-4384-9a5a-146d1183c09d.png)  
 ![image](https://user-images.githubusercontent.com/69943723/218630756-b48fb2d4-4a8e-464e-a05f-4379fc305918.png)  
 **난점3** : 수집한 soup 상에서 원하는 정보를 조회해봤더니 해당 정보가 존재하지 않는다는 결과가 나왔다.  
 이는 해당 사이트가 javaScript를 통해 화면 구성이 이루어지는 동적 페이지였기에 발생하는 문제였으며, javaScript 상에 존재하는 문자를 정규식을 통해 정리해 원하는 데이터들을 수집하는 것이 가능했다.  
+
 ![image](https://user-images.githubusercontent.com/69943723/218630769-36fcac7a-3709-458c-bb02-530071451832.png)  
 **난점4** : 국내 사이트에서 대량의 데이터를 수집하려 시도했더니, 해당 사이트에서 접속을 차단하여 수집이 불가능했다.  
 따라서 국내 사이트를 출처로 하는 데이터는 상위 100개의 데이터만 수집하고 다루기로 했다.  
+
 ![image](https://user-images.githubusercontent.com/69943723/218630787-445c1a1b-6a8b-4c98-b8c3-62886582f3a8.png)  
 **난점5** : 다루고자 하는 데이터의 카테고리, 매커니즘의 종류수가 굉장히 많았으며, 하나의 항목에 대응되는 카테고리, 매커니즘의 수가 1개가 아니었다.(1:1대응이 아니다.)  
-여러개의 카테고리, 매커니즘을 나타내는 String들을 List 형태처럼 구성해서 하나의 행에 넣어, 사용할 때에는 별개의   
+여러개의 카테고리, 매커니즘을 나타내는 String들을 List 형태처럼 구성해서 하나의 행에 넣어, 사용할 때에는 별개의 함수를 만들어 처리했다.  
+
 ## 데이터 프레임 가공
 ![image](https://user-images.githubusercontent.com/69943723/218619754-172d5527-52eb-43c3-b17f-f9b1a9f1c7b0.png)  
+각 보드게임 항목별 존재하는 데이터프레임을 선그래프로 분석하기 위해 발매년도를 기준으로 groupby를 통해 통합을 하여 년도별 발매량 데이터프레임으로 가공하였다.  
+이후 절대적인 양이 아닌 상대적인 비율을 보기 위해 최대값을 1로 scaling하는 함수를 만들었으며 해당하는 데이터프레임으로 가공하였다.  
+
 ![image](https://user-images.githubusercontent.com/69943723/218629585-a0209995-07d3-4303-b9b5-672dfc7d32fa.png)  
+다루는 매커니즘 수가 과도하게 많아 이를 분석하기 위해 매커니증이 정의되어있는 해당 사이트의 공식문서를 보고 비슷한 매커니즘끼리 통합하여 다루었다. 
+통합하는 기준에 주관이 개입되었을 여지가 있다는 한계가 있을 수 있다.  
 
 ## 시각화 및 데이터 분석
 ### 상관관계 분석
 ![Screenshot from 2023-02-14 11-49-29](https://user-images.githubusercontent.com/69943723/218626290-80e5afd1-f445-4fa0-a83a-2c2b8e64859e.png)  
+우선 간단한 상관관계를 출력해보았다.
+주목할 만한 상관관계로는 다음과 같은 것들이 있었다.
+- 난이도와 평점이 강한 상관관계를 보였다. 사람들은 쉬운 
+- 출시일이 경과함에 따라 약하지만 평점이 올라가는 점도 흥미로웠다.
 ### 배경 시대별 분석
 ![1](https://user-images.githubusercontent.com/69943723/218626628-71144b2a-4013-4728-a7f5-4945147daf4b.png)  
 ![image](https://user-images.githubusercontent.com/69943723/218626750-1ae9fca3-45b8-4a5f-885c-4c0f17f91298.png)  
